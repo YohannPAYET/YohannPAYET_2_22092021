@@ -24,53 +24,52 @@ body {
   width: 45%;
 }
 
-.nav_decoration a{
+.nav_decoration a {
   text-decoration: none;
   color: #0065fc;
 }
 
-.nav_decoration a:hover{
+.nav_decoration a:hover {
   color: #0065fc;
   border-top: 2px solid #0065fc;
   padding-top: 33px;
 }
 
-.a_vanilla a:hover{
-   border-top: none;
+.a_vanilla a:hover {
+  border-top: none;
 }
-.a_vanilla{
-   text-decoration: none;
-   color: black;
+.a_vanilla {
+  text-decoration: none;
+  color: black;
 }
 
-.text_bold{
-   font-weight: bold;
+.text_bold {
+  font-weight: bold;
 }
 /* NAVBAR */
 
 /* Premier TEXTE */
-#accroche{
+#accroche {
   margin-top: 35px;
 }
 /* Premier TEXTE */
 
 /* Barre de recherche */
-.map{
-   width: 27px;
-   height: 28px;
-   margin-top: 25px;
-   border-radius: 10px 0 0 10px;
-   /* centrer un élément dans une <div> */
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   /* centrer un élément dans une <div> */
-   background-color: #f2f2f2;
+.map {
+  width: 27px;
+  height: 28px;
+  margin-top: 25px;
+  border-radius: 10px 0 0 10px;
+  /* centrer un élément dans une <div> */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* centrer un élément dans une <div> */
+  background-color: #f2f2f2;
 }
 
-.flex_3
-{
-   display: flex;
+.flex_3 {
+  display: flex;
 }
 
 input {
@@ -91,26 +90,25 @@ input {
 }
 /* Barre de recherche */
 
-.icons{
-   background-color: #DEEBFF;
-   color: #0065FC;
-   width: 50px;
-   height: 50px;
-   border-radius: 50%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   
+.icons {
+  background-color: #deebff;
+  color: #0065fc;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Filtres */
 .icons_prox {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
- }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-#filter{
+#filter {
   margin-top: 3%;
   display: flex;
   justify-content: space-around;
@@ -120,38 +118,36 @@ input {
 }
 
 .border_filter {
-   margin-top: 2.8px;
-   text-align: center;
-   background-color: white;
-   border: 3px solid #f2f2f2;
-   border-radius: 70px;
-   padding-right: 12px;
- }
- 
- .textfilter
- {
-   padding-left: 12px;
- }
+  margin-top: 2.8px;
+  text-align: center;
+  background-color: white;
+  border: 3px solid #f2f2f2;
+  border-radius: 70px;
+  padding-right: 12px;
+}
+
+.textfilter {
+  padding-left: 12px;
+}
 /* Filtres */
 
 /* info */
-#i_icon
-{
-   display: flex;
-   align-items: center;
-   margin-top: 2%;
+#i_icon {
+  display: flex;
+  align-items: center;
+  margin-top: 2%;
 }
 
-#i_border{
-   width: 20px;
-   height: 20px;
-   border-radius: 20px;
-   border: 2px solid #f2f2f2;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: #0065FC;
-   margin-right: 5px;
+#i_border {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  border: 2px solid #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0065fc;
+  margin-right: 5px;
 }
 /* info */
 
@@ -163,17 +159,19 @@ section a {
 }
 
 h1 {
-   padding: 12px;
- }
+  padding: 3px;
+}
 
 h3 {
-   margin-right: 25px;
+   font-weight: bold;
+  margin-right: 25px;
 }
 
 .hotel {
   width: 830px;
-  height: 500px;
+  height: 590px;
   padding: 12px;
+  padding-top: 8px;
   margin-top: 3%;
   background-color: #f2f2f2;
   border-radius: 10px;
@@ -195,11 +193,7 @@ section img {
   border-radius: 20px 20px 0 0;
 }
 
-figure {
-  margin: 0.5em;
-}
-
-figcaption {
+.description{
   width: 216px;
   margin: 5px;
   padding: 10px;
@@ -208,92 +202,117 @@ figcaption {
   border-radius: 0 0 20px 20px;
   background-color: white;
   box-shadow: 0 5px #c4c2c4;
-  font-weight: bold;
+  
 }
 
 #more {
+  font-size: 16px;
   margin-left: 12px;
   font-weight: bold;
   border: none;
+}
+
+.stars{
+   color: #0065fc;
+}
+
+.stars_none
+{
+   color: #c4c2c4;
 }
 /* Hotels */
 
 /* Populaires */
 aside {
   margin-left: 65%;
-  height: 520px;
-  margin-top: -38%;
+  height: 609px;
+  margin-top: -44.3%;
   background-color: #f2f2f2;
   border-radius: 10px;
-  padding-top: 3px;
+  padding-top: 1px;
+  padding-left: 30px;
 }
 
-aside h1{
-   text-align: left;
-   padding: 12px;
- }
-
- #increase{
-    margin-left: 50%;
- }
+#increase {
+  margin-left: 50%;
+}
 
 .resize {
   width: 130px;
   height: 120px;
-  margin-top: auto;
   padding-right: 25px;
+  border-radius: 10px;
 }
 
-aside .conteneur {
+.conteneur {
+  width: 90%;
   display: flex;
   height: 120px;
-  margin-top: 1.3%;
-  padding-left: 10%;
-  
-}
-
-.conteneur{
-   border: 3px solid #0065FC;
-
+  margin-top: 9%;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 5px #c4c2c4;
 }
 /* Populaires */
 
 /* Activités */
-.activity {
-  margin-top: 5%;
-  width: 100%;
+#anchor_activity
+{
+   margin-top: 35px;
 }
 
-.float {
-  float: right;
-  margin-right: 60%;
-  margin-top: -34%;
+.conteneur_2
+{
+   width: 45%;
+   height: 550px;
+   padding-top: 2%;
+   padding-left: 2%;
+   margin-bottom: 5%;
+   
+}
+.conteneur_3
+{
+margin-left: 50%;
+margin-top: -47%;
+
 }
 
-.resize_2 {
-  height: 390px;
+.img_1
+{
+   height: 400px;
+   width: 300px;
 }
 
-.resize_3 {
-  height: 220px;
+.sidecar
+{
+   display: flex;
+   flex-direction: column;
+   margin-left: 55%;
+margin-top: -72.5%;
+
 }
 
-.position {
-  margin-left: 120%;
+.resize_2
+{
+   height: 227.7px;
 }
 
-.float_2 {
-  margin-top: -168%;
-  margin-right: -85%;
+.size_content
+{
+   width: 280px;
 }
+
+
+
 /* Activités */
 
 /* Pied de page */
 footer {
-  margin-top: 5%;
+  
   background-color: #f2f2f2;
   display: flex;
   justify-content: space-evenly;
+  height: 140px;
   padding: 2%;
   width: 100%;
 }
@@ -301,7 +320,6 @@ footer {
 
 /* RESPONSIVE */
 @media only screen and (min-width: 1200px) /* tablettes et ordinateurs */ {
-
 }
 @media only screen and (min-width: 322px) and (max-width: 799px) {
   /*style smartphones et petites tablettes en portrait*/
