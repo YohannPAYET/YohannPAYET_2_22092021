@@ -93,6 +93,10 @@ input {
   background-color: #0065fc;
 }
 /* Barre de recherche */
+.desktop_none
+ {
+    display: none;
+ }
 
 .icons {
   background-color: #deebff;
@@ -355,57 +359,112 @@ footer a
 /* RESPONSIVE */
 @media only screen and (min-width: 1200px) /* tablettes et ordinateurs */ {
 }
-@media only screen and (min-width: 322px) and (max-width: 799px) /*style smartphones et petites tablettes en portrait*/
+@media only screen and (min-width: 50px) and (max-width: 790px) /*style smartphones et petites tablettes en portrait*/
 {
    body {
     margin: 0;
     font-size: 16px;
-    text-align: left;
     width: 322px;
   }
 /* NAVBAR */
 
 .logo
 {
-   margin-top: -5%;
+   margin-top: 0;
 }
+
+.nav_decoration a {
+   
+   text-decoration: none;
+   color: #0065fc;
+ }
+ 
+ .nav_decoration a:hover {
+   color: #0065fc;
+   border-top: none;
+   border-bottom: 2px solid #0065fc;
+ }
+
+ .a_vanilla
+ {
+   text-decoration: none;
+   color: black;
+ }
+
   .link_12{
      display: flex;
      justify-content: space-around;
      padding-top: 70%;
      font-size: 20px;
      width: 100%;
-     border: 1px solid black;
-  }
-
-  .home:hover
-  {
-   border-top: none;
-   border-bottom: 2px solid #0065fc;
-   
   }
 
   .home{
-     margin-left: 30%;
-     margin-right: 70%;
+   
+     margin-left: 40%;
+     padding-right: 20%;
   }
 
 .activity
 {
-   margin-right: 90%;
+   margin-right: 60%;
+   
 }
 
 .signin
 {
-   margin-top: -20%;
+   margin-top: -45%;
    margin-right: 20px;
 }
 
-h1{
-   width: 100%;
-   font-size: 15px;
-}
+#accroche {
+   margin-left: 6%;
+   font-size: 19px;
+ }
 
+ #catch
+ {
+    margin-left: 7%;
+    margin-top: -12px;
+ }
+
+ .desktop_none
+ {
+    display: block;
+ }
+
+ .mobile_none
+ {
+    display: none;
+ }
+
+ .flex_3
+ {
+    margin-left: 15%;
+ }
+ 
+ #filter
+ {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: auto;
+    margin-top: 15px;
+    
+ }
+
+ .row
+ {
+    margin-left: 400px;
+    margin-top: -57px;
+ }
+
+ .pets
+ {
+    margin-left: auto;
+    margin-right: -15px;
+    
+ }
 }
 
 @media only screen and (max-width: 767px) and (orientation: portrait) /* smartphone en mode portait */ {
