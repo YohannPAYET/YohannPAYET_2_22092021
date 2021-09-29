@@ -62,7 +62,7 @@ body {
 /* Barre de recherche */
 .map {
   width: 27px;
-  height: 28px;
+  height: 25px;
   margin-top: 25px;
   border-radius: 10px 0 0 10px;
   /* centrer un élément dans une <div> */
@@ -87,7 +87,7 @@ input {
   cursor: pointer;
   border: none;
   padding: 6px;
-  height: 28px;
+  height: 25px;
   color: white;
   margin-top: 25px;
   border-radius: 0 8px 8px 0;
@@ -212,6 +212,10 @@ section img {
   box-shadow: 0 5px #c4c2c4;
 }
 
+.description p{
+   font-weight: normal;
+}
+
 #more {
   font-size: 16px;
   margin-left: 12px;
@@ -286,6 +290,11 @@ aside a {
   padding-left: 2%;
   margin-bottom: 5%;
 }
+
+.conteneur_2 a{
+   font-weight: normal;
+}
+
 .conteneur_3 {
   margin-left: 50%;
   margin-top: -47%;
@@ -442,8 +451,11 @@ footer a {
 
   /* info */
 
+/* hotel */
+
   .hotel {
-    margin-top: 1200px;
+    margin-top: 650px;
+    background-color: white;
   }
 
   .hotel_room {
@@ -452,10 +464,26 @@ footer a {
     flex-direction: column;
   }
 
+  .hotel img{
+     width: 40%; 
+  }
+
+  .description{
+     font-size: 13px;
+     width: 37.6%;
+  }
+
+  .description p{
+     font-weight: normal;
+  }
+
+/* hotel */
+
   /* POPULAIRES */
 
   aside {
     background-color: #f2f2f2;
+    margin-top: -1250px;
     border-radius: 0;
     margin-left: 0;
     width: 107%;
@@ -472,14 +500,11 @@ margin-top: 30px;
     
   }
 
-  .pop_content {
-    margin-top: -1750px;
-  }
 
   .conteneur
 {
    margin-top: 35px;
-   margin-bottom: 25px;
+  
    font-size: 12px;
    margin-left: -25px;
    width: 107%;
@@ -491,26 +516,47 @@ margin-top: 30px;
    height: 130px;
 }
 
-  .activity_content .sidecar {
-    display: flex;
-    flex-direction: column;
-  }
+/* POPULAIRES */
+/* ACTIVITES */
+
+.sidecar
+{
+   margin-top: 25px;
+   margin: 0;
+}
 
   .activity_content{
-   margin-top: 2600px;
+   margin-top: 1700px;
 }
 
   .img_1,
   .img_12,
   .resize_2,
   .resize_3 {
-    height: 200px;
+    height: 230px;
     width: 340px;
   }
 
+  .size_content2{
+     width: 320px;
+  }
+
+  .conteneur_2
+  {
+     margin-top: 900px;
+     margin: 0;
+  }
+
+  .conteneur_3{
+     margin-top: 300px;
+  }
+
+  /* ACTIVITES */
+/*PIED DE PAGE*/
+
   footer {
     background-color: #f2f2f2;
-    margin-top: 1200px;
+    margin-top: 320px;
     width: 100%;
   }
 
