@@ -7,7 +7,8 @@ body {
 
 /* NAVBAR */
 .logo {
-  margin-bottom: 25px;
+   
+  margin-bottom: 20px;
   width: 97px;
   height: 45px;
 }
@@ -15,7 +16,8 @@ body {
 .nav_flex {
   display: flex;
   justify-content: space-between;
-  margin: auto;
+  margin-top: 30px;
+  
 }
 
 .nav_flex2 /* double balise flex - espace autour sans utiliser de marges */ {
@@ -33,7 +35,7 @@ body {
 .nav_decoration a:hover {
   color: #0065fc;
   border-top: 2px solid #0065fc;
-  padding-top: 20px;
+  padding-top: 45px;
 }
 
 .activity {
@@ -212,8 +214,8 @@ section img {
   box-shadow: 0 5px #c4c2c4;
 }
 
-.description p{
-   font-weight: normal;
+.description p {
+  font-weight: normal;
 }
 
 #more {
@@ -248,16 +250,14 @@ aside a {
   color: black;
 }
 
-#top_content
-{
-   display: flex;
-   justify-content: space-between;
+#top_content {
+  display: flex;
+  justify-content: space-between;
 }
 
-#increase
-{
-   margin-top: 25px;
-   margin-right: 12px;
+#increase {
+  margin-top: 25px;
+  margin-right: 12px;
 }
 
 .resize {
@@ -291,8 +291,8 @@ aside a {
   margin-bottom: 5%;
 }
 
-.conteneur_2 a{
-   font-weight: normal;
+.conteneur_2 a {
+  font-weight: normal;
 }
 
 .conteneur_3 {
@@ -339,21 +339,31 @@ footer a {
 
 .footercontent {
   display: flex;
-  justify-content: space-around;
+  margin-left: 80px;
   align-items: center;
+}
+#home{
+   padding-left: 23%;
+}
+
+#assist
+{
+   padding-left: 23%;
 }
 
 /* Pied de page */
 
 /* RESPONSIVE */
-@media only screen and (min-width: 1200px) /* tablettes et ordinateurs */ {
+@media only screen and (min-width: 791px) and (max-width: 1080) /* tablettes et ordinateurs */ {
+ 
+   
+
 }
 @media only screen and (min-width: 350px) and (max-width: 790px) /*style smartphones et petites tablettes en portrait*/ {
   body {
     margin: 0;
     font-size: 16px;
     max-width: 322px;
-   
   }
   /* NAVBAR */
 
@@ -452,7 +462,7 @@ footer a {
 
   /* info */
 
-/* hotel */
+  /* hotel */
 
   .hotel {
     margin-top: 650px;
@@ -465,20 +475,20 @@ footer a {
     flex-direction: column;
   }
 
-  .hotel img{
-     width: 40%; 
+  .hotel img {
+    width: 40%;
   }
 
-  .description{
-     font-size: 13px;
-     width: 37.6%;
+  .description {
+    font-size: 13px;
+    width: 37.6%;
   }
 
-  .description p{
-     font-weight: normal;
+  .description p {
+    font-weight: normal;
   }
 
-/* hotel */
+  /* hotel */
 
   /* POPULAIRES */
 
@@ -490,45 +500,38 @@ footer a {
     width: 107%;
   }
 
-  aside h1
-  {
-   margin-left: -25px;
-   
+  aside h1 {
+    margin-left: -25px;
   }
 
   #increase {
-margin-top: 30px;
-    
+    margin-top: 30px;
   }
 
+  .conteneur {
+    margin-top: 35px;
 
-  .conteneur
-{
-   margin-top: 35px;
-  
-   font-size: 12px;
-   margin-left: -25px;
-   width: 107%;
-  height: 130px;
-}
+    font-size: 12px;
+    margin-left: -25px;
+    width: 107%;
+    height: 130px;
+  }
 
-.conteneur img
-{
-   height: 130px;
-}
+  .conteneur img {
+    height: 130px;
+  }
 
-/* POPULAIRES */
-/* ACTIVITES */
+  /* POPULAIRES */
+  /* ACTIVITES */
 
-.sidecar
-{
-   margin-top: 25px;
-   margin: 0;
-}
+  .sidecar {
+    margin-top: 25px;
+    margin: 0;
+  }
 
-  .activity_content{
-   margin-top: 1700px;
-}
+  .activity_content {
+    margin-top: 1700px;
+  }
 
   .img_1,
   .img_12,
@@ -538,22 +541,21 @@ margin-top: 30px;
     width: 340px;
   }
 
-  .size_content2{
-     width: 320px;
+  .size_content2 {
+    width: 320px;
   }
 
-  .conteneur_2
-  {
-     margin-top: 900px;
-     margin: 0;
+  .conteneur_2 {
+    margin-top: 900px;
+    margin: 0;
   }
 
-  .conteneur_3{
-     margin-top: 300px;
+  .conteneur_3 {
+    margin-top: 300px;
   }
 
   /* ACTIVITES */
-/*PIED DE PAGE*/
+  /*PIED DE PAGE*/
 
   footer {
     background-color: #f2f2f2;
@@ -566,7 +568,7 @@ margin-top: 30px;
     background-color: #f2f2f2;
     flex-direction: column;
     margin: auto;
-    width: 117%;
+    width: 130%;
   }
 
   #about {
