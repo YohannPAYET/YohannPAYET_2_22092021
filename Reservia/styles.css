@@ -186,7 +186,7 @@ h3 {
   background-color: #f2f2f2;
   border-radius: 10px;
 }
-.hotel_room {
+.hotel_room, .hotel_room2 {
   display: flex;
 }
 
@@ -354,12 +354,45 @@ footer a {
 /* Pied de page */
 
 /* RESPONSIVE */
-@media only screen and (min-width: 791px) and (max-width: 1080) /* tablettes et ordinateurs */ {
+@media only screen and (min-width: 791px) and (max-width: 1024px) /* tablettes et ordinateurs */ {
  
-   
+   body{
+margin-left: 12px;
+width: 100%;
+   }
+
+   .link{
+margin-right: 10%;
+   }
+
+   #catch
+   {
+      margin-left: 5px;
+   }
+
+   #filter
+   {
+      margin-left: 5px;
+      
+   }
+
+   .pets {
+      margin-right: -110px;
+    }
+
+    .hotel_room, .hotel_room2{
+       flex-direction: column;
+       display: inline-block;
+    }
+
+    .float
+    {
+      
+      margin-left: 40%;
+    }
 
 }
-@media only screen and (min-width: 350px) and (max-width: 790px) /*style smartphones et petites tablettes en portrait*/ {
+@media only screen and (min-width: 350px) and (max-width: 780px) /*style smartphones et petites tablettes en portrait*/ {
   body {
     margin: 0;
     font-size: 16px;
@@ -469,7 +502,7 @@ footer a {
     background-color: white;
   }
 
-  .hotel_room {
+  .hotel_room, .hotel_room2{
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -581,7 +614,6 @@ footer a {
 
   #home {
     margin-right: 60%;
-    padding-top: ;
     
   }
 
