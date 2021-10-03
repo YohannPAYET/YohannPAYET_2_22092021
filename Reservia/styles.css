@@ -361,10 +361,6 @@ margin-left: 12px;
 width: 100%;
    }
 
-   .link{
-margin-right: 10%;
-   }
-
    #catch
    {
       margin-left: 5px;
@@ -380,21 +376,66 @@ margin-right: 10%;
       margin-right: -110px;
     }
 
+    .hotel{
+       background-color: white;
+       height: 60%;
+       width: 55%;
+    }
+
+
     .hotel_room, .hotel_room2{
        flex-direction: column;
        display: inline-block;
     }
 
-    .float
+    aside{
+       background-color: white;
+       margin-top: -82.6%;
+       width: 45%;
+       margin-left: 53%;
+    }
+
+    .activity_content{
+       margin-top: 25%;
+       margin-left: -15px;
+       
+    }
+
+    #anchor_activity
     {
-      
-      margin-left: 40%;
+       margin-left: 25px;
+    }
+
+    .conteneur_3{
+       margin-top: -60%;
+    }
+
+    .sidecar{
+       position: absolute;
+       margin: auto;
+       flex-direction: row;
+    }
+
+    .size_content{
+       width: 470px;
+    }
+
+    footer{
+       margin-top: 10%;
+    }
+
+    .img_1, .img_12 {
+    height: 230px;
+    width: 490px;
+    }
+
+    .resize_3{
+      height: 227.7px;
     }
 
 }
 @media only screen and (min-width: 350px) and (max-width: 780px) /*style smartphones et petites tablettes en portrait*/ {
   body {
-    margin: 0;
     font-size: 16px;
     max-width: 322px;
   }
