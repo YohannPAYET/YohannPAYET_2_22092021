@@ -1,13 +1,17 @@
 body {
   font-family: "Raleway", sans-serif;
-  max-width: 1380px;
   font-size: 12px;
+}
+
+main {
+  width: 98%;
+  max-width: 1440px;
   margin: auto;
 }
 
 /* NAVBAR */
 .logo {
-   
+  margin-left: 6px;
   margin-bottom: 20px;
   width: 97px;
   height: 45px;
@@ -17,7 +21,6 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
-  
 }
 
 .nav_flex2 /* double balise flex - espace autour sans utiliser de marges */ {
@@ -58,6 +61,10 @@ body {
 /* Premier TEXTE */
 #accroche {
   margin-top: 35px;
+}
+
+#catch {
+  margin-left: 6px;
 }
 /* Premier TEXTE */
 
@@ -183,11 +190,14 @@ h3 {
   padding: 12px;
   padding-top: 8px;
   margin-top: 3%;
+  float: left;
   background-color: #f2f2f2;
   border-radius: 10px;
 }
-.hotel_room, .hotel_room2 {
+.hotel_room,
+.hotel_room2 {
   display: flex;
+  padding-left: 18px;
 }
 
 #hotel_room {
@@ -211,7 +221,7 @@ section img {
   border: 5px solid white;
   border-radius: 0 0 20px 20px;
   background-color: white;
-  box-shadow: 0 5px #c4c2c4;
+  box-shadow: 0 3px #c4c2c4;
 }
 
 .description p {
@@ -236,13 +246,13 @@ section img {
 
 /* Populaires */
 aside {
-  margin-left: 65%;
   height: 609px;
-  margin-top: -44.3%;
+  float: right;
   background-color: #f2f2f2;
   border-radius: 10px;
   padding-top: 1px;
   padding-left: 30px;
+  margin-top: 40px;
 }
 
 aside a {
@@ -274,13 +284,13 @@ aside a {
   margin-top: 9%;
   border-radius: 10px;
   background-color: white;
-  box-shadow: 0 5px #c4c2c4;
+  box-shadow: 0 3px #c4c2c4;
 }
 /* Populaires */
 
 /* Activités */
-#anchor_activity {
-  margin-top: 35px;
+.activity_content h1 {
+  margin-top: 40em;
 }
 
 .conteneur_2 {
@@ -288,7 +298,10 @@ aside a {
   height: 550px;
   padding-top: 2%;
   padding-left: 2%;
-  margin-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  float: left;
+  margin-left: 5%;
 }
 
 .conteneur_2 a {
@@ -296,29 +309,47 @@ aside a {
 }
 
 .conteneur_3 {
-  margin-left: 50%;
-  margin-top: -47%;
+   display: flex;
+   flex-direction: row;
+   float: right;
+   margin-top: 25px;
+   margin-right: 5%;
 }
 
 .img_1,
 .img_12 {
-  height: 400px;
+  height: 500px;
   width: 300px;
 }
 
 .sidecar {
   display: flex;
   flex-direction: column;
-  margin-left: 55%;
-  margin-top: -72.5%;
+  margin-top: 3px;
 }
 
 .resize_2 {
-  height: 227.7px;
+  height: 260px;
+  width: 260px;
+}
+
+.resize_3
+{
+   width: 260px;
+   height: 185px;
 }
 
 .size_content {
   width: 280px;
+}
+
+.size_content2
+{
+   width: 240px;
+}
+
+.size_content3{
+   width: 240px;
 }
 
 /* Activités */
@@ -326,10 +357,9 @@ aside a {
 /* Pied de page */
 footer {
   background-color: #f2f2f2;
-
   height: 140px;
-  margin-left: -40px;
-  width: 105%;
+  margin-top: 58em;
+  width: 100%;
 }
 
 footer a {
@@ -339,102 +369,94 @@ footer a {
 
 .footercontent {
   display: flex;
-  margin-left: 80px;
   align-items: center;
 }
-#home{
-   padding-left: 23%;
+#home {
+  padding-left: 23%;
 }
 
-#assist
-{
-   padding-left: 23%;
+#assist {
+  padding-left: 23%;
 }
 
 /* Pied de page */
 
 /* RESPONSIVE */
-@media only screen and (min-width: 791px) and (max-width: 1024px) /* tablettes et ordinateurs */ {
- 
-   body{
-margin-left: 12px;
-width: 100%;
-   }
+@media only screen and (min-width: 560px) and (max-width: 1024px) /* tablettes et ordinateurs */ {
+  body {
+    margin-left: 12px;
+    width: 100%;
+  }
 
-   #catch
-   {
-      margin-left: 5px;
-   }
+  #catch {
+    margin-left: 5px;
+  }
 
-   #filter
-   {
-      margin-left: 5px;
-      
-   }
+  #filter {
+    margin-left: 5px;
+  }
 
-   .pets {
-      margin-right: -110px;
-    }
+  .pets {
+    margin-right: -110px;
+  }
 
-    .hotel{
-       background-color: white;
-       height: 60%;
-       width: 55%;
-    }
+  .hotel {
+    background-color: white;
+    height: 60%;
+    width: 55%;
+  }
 
+  .hotel_room,
+  .hotel_room2 {
+    flex-direction: column;
+    display: inline-block;
+  }
 
-    .hotel_room, .hotel_room2{
-       flex-direction: column;
-       display: inline-block;
-    }
+  aside {
+    background-color: white;
+    margin-top: -82.6%;
+    width: 45%;
+    margin-left: 53%;
+  }
 
-    aside{
-       background-color: white;
-       margin-top: -82.6%;
-       width: 45%;
-       margin-left: 53%;
-    }
+  .activity_content {
+    margin-top: 25%;
+    margin-left: -15px;
+  }
 
-    .activity_content{
-       margin-top: 25%;
-       margin-left: -15px;
-       
-    }
+  #anchor_activity {
+    margin-left: 25px;
+  }
 
-    #anchor_activity
-    {
-       margin-left: 25px;
-    }
+  .conteneur_3 {
+    margin-top: -60%;
+  }
 
-    .conteneur_3{
-       margin-top: -60%;
-    }
+  .sidecar {
+    position: absolute;
+    margin: auto;
+    flex-direction: row;
+  }
 
-    .sidecar{
-       position: absolute;
-       margin: auto;
-       flex-direction: row;
-    }
+  .size_content {
+    width: 470px;
+  }
 
-    .size_content{
-       width: 470px;
-    }
+  footer {
+    margin-top: 10%;
+  }
 
-    footer{
-       margin-top: 10%;
-    }
-
-    .img_1, .img_12 {
+  .img_1,
+  .img_12 {
     height: 230px;
     width: 490px;
-    }
+  }
 
-    .resize_3{
-      height: 227.7px;
-    }
-
+  .resize_3 {
+    height: 227.7px;
+  }
 }
-@media only screen and (min-width: 350px) and (max-width: 780px) /*style smartphones et petites tablettes en portrait*/ {
+@media only screen and (min-width: 350px) and (max-width: 550px) /*style smartphones et petites tablettes en portrait*/ {
   body {
     font-size: 16px;
     max-width: 322px;
@@ -543,7 +565,8 @@ width: 100%;
     background-color: white;
   }
 
-  .hotel_room, .hotel_room2{
+  .hotel_room,
+  .hotel_room2 {
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -649,25 +672,24 @@ width: 100%;
     margin-right: 15%;
   }
 
-  #about h3{
-     font-size: 15px;
+  #about h3 {
+    font-size: 15px;
   }
 
   #home {
     margin-right: 60%;
-    
   }
 
-  #home h3{
-   font-size: 15px;
+  #home h3 {
+    font-size: 15px;
   }
 
   #assist {
     margin-right: 68%;
   }
-  #assist h3{
-   font-size: 15px;
-}
+  #assist h3 {
+    font-size: 15px;
+  }
 }
 
 @media only screen and (max-width: 767px) and (orientation: portrait) /* smartphone en mode portait */ {
