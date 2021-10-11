@@ -5,6 +5,7 @@ body {
 
 main {
   width: 98%;
+  min-width: 1353px;
   max-width: 1440px;
   margin: auto;
 }
@@ -71,9 +72,9 @@ main {
 /* Barre de recherche */
 .map {
   width: 27px;
-  height: 28px;
+  height: 30px;
   margin-top: 25px;
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px 1px 1px 10px;
   /* centrer un élément dans une <div> */
   display: flex;
   justify-content: center;
@@ -90,16 +91,18 @@ input {
   padding: 4px;
   margin-bottom: 35px;
   margin-top: 25px;
+  font-weight: bold;
+  font-size: 15px
 }
 
 .search {
   cursor: pointer;
   border: none;
   padding: 6px;
-  height: 28px;
+  height: 31px;
   color: white;
   margin-top: 25px;
-  border-radius: 0 8px 8px 0;
+  border-radius: 2px 8px 8px 2px;
   background-color: #0065fc;
 }
 /* Barre de recherche */
@@ -357,9 +360,10 @@ aside a {
 /* Pied de page */
 footer {
   background-color: #f2f2f2;
-  height: 140px;
+  height: 180px;
   margin-top: 58em;
   width: 100%;
+  margin-left: -5px;
 }
 
 footer a {
@@ -369,8 +373,13 @@ footer a {
 
 .footercontent {
   display: flex;
-  align-items: center;
+  width: 100%;
 }
+
+#about {
+   padding-left: 8%;
+ }
+
 #home {
   padding-left: 23%;
 }
@@ -382,7 +391,7 @@ footer a {
 /* Pied de page */
 
 /* RESPONSIVE */
-@media only screen and (min-width: 560px) and (max-width: 1024px) /* tablettes et ordinateurs */ {
+@media only screen and (min-width: 560px) and (max-width: 1352px) /* tablettes et ordinateurs */ {
   body {
     margin-left: 12px;
     width: 100%;
@@ -404,6 +413,7 @@ footer a {
     background-color: white;
     height: 60%;
     width: 55%;
+    float: left;
   }
 
   .hotel_room,
@@ -412,24 +422,18 @@ footer a {
     display: inline-block;
   }
 
+
+
   aside {
     background-color: white;
-    margin-top: -82.6%;
-    width: 45%;
-    margin-left: 53%;
+    float: right;
+    
   }
 
-  .activity_content {
-    margin-top: 25%;
-    margin-left: -15px;
-  }
-
-  #anchor_activity {
-    margin-left: 25px;
-  }
+  
 
   .conteneur_3 {
-    margin-top: -60%;
+   margin-top: 10%;
   }
 
   .sidecar {
@@ -443,7 +447,7 @@ footer a {
   }
 
   footer {
-    margin-top: 10%;
+    margin-top: 50%;
   }
 
   .img_1,
@@ -456,7 +460,7 @@ footer a {
     height: 227.7px;
   }
 }
-@media only screen and (min-width: 350px) and (max-width: 550px) /*style smartphones et petites tablettes en portrait*/ {
+@media only screen and (min-width: 273px) and (max-width: 550px) /*style smartphones et petites tablettes en portrait*/ {
   body {
     font-size: 16px;
     max-width: 322px;
