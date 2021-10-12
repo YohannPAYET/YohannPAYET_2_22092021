@@ -454,7 +454,7 @@ footer a {
 
 .resize{
    width: 235px;
-   height: 235px;
+   height: 200px;
    border: 3px solid white;
    border-radius: 0 10px 0 0;
    justify-content: space-around;
