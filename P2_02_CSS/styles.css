@@ -4,7 +4,7 @@ body {
 }
 
 main {
-  width: 98%;
+  width: 100%;
   min-width: 1353px;
   max-width: 1440px;
   margin: auto;
@@ -362,7 +362,7 @@ footer {
   background-color: #f2f2f2;
   height: 180px;
   margin-top: 58em;
-  width: 100%;
+  width: 120em;
   margin-left: -5px;
 }
 
@@ -393,8 +393,9 @@ footer a {
 /* RESPONSIVE */
 @media only screen and (min-width: 560px) and (max-width: 1352px) /* tablettes et ordinateurs */ {
   body {
-    margin-left: 12px;
-    width: 100%;
+    margin: auto;
+    width: 90%;
+
   }
 
   #catch {
@@ -405,15 +406,22 @@ footer a {
     margin-left: 5px;
   }
 
-  .pets {
-    margin-right: -110px;
+  .hotel {
+    background-color: #f2f2f2;
+    height: 60%;
+    width: 68%;
+    float: none;
+    margin-left: 4%;
   }
 
-  .hotel {
-    background-color: white;
-    height: 60%;
-    width: 55%;
-    float: left;
+  .hotel img{
+     width: 400px;
+     height: 200px;
+  }
+
+  .hotel .description{
+     width: 380px;
+     
   }
 
   .hotel_room,
@@ -422,15 +430,35 @@ footer a {
     display: inline-block;
   }
 
-
-
   aside {
-    background-color: white;
-    float: right;
-    
-  }
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    width: 68%;
+    height: 45em;
+    margin-right: 26%;
+    justify-content: space-around;
+   
+}
 
-  
+.conteneur{
+   width: 200px;
+   height: 310px;
+   display: flex;
+   flex-direction: column;
+}
+
+.pop_description{
+   padding-left: 4%;
+}
+
+.resize{
+   width: 235px;
+   height: 235px;
+   border: 3px solid white;
+   border-radius: 0 10px 0 0;
+   justify-content: space-around;
+}
 
   .conteneur_3 {
    margin-top: 10%;
