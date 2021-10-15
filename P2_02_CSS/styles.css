@@ -1,8 +1,8 @@
 body {
   font-family: "Raleway", sans-serif;
-  max-width: 1380px;
   font-size: 12px;
   margin: auto;
+  width: 100%;
 }
 
 main {
@@ -13,9 +13,9 @@ main {
 
 .navbar
 {
-   display: grid;
+ display: grid;
 grid-template-columns: repeat(5, 1fr);
-grid-template-rows: repeat(5, 1fr);
+grid-template-rows: 55px;
 grid-column-gap: 0px;
 grid-row-gap: 0px; 
 margin-top: 35px;
@@ -23,9 +23,9 @@ height: 55px;
 }
 
 .logo { 
-grid-area: 1 / 1 / 2 / 2; 
+grid-area: 1 / 1 / 2 / 2;; 
 height: 35px;
-margin-left: 7px;
+margin: auto;
 }
 
 .link_content { 
@@ -44,15 +44,16 @@ a{
 .link_content a:hover{
    border-top: 2px solid #0065FC;
    padding-top: 29px;
+   color: #0065FC;
 }
 
 .signin a{
    font-weight: bold;
    color: #0065FC;
+   margin-right: 125px;
 }
 
 .search h1 {
-   font-weight: 700;
    font-size: 22px;
    margin-top: 0;
 }
@@ -164,14 +165,168 @@ form {
    margin-right: 5px;
  }
 
+ #hotel{
+   background-color: #F2F2F2;
+   border-radius: 1rem;
+   padding: 20px;
+   width: 63%;
+   float: left;
+   margin-top: 25px;
+ }
+
  #hotel img{
    width: 250px;
-   height: 100px;
-   background-size: 100% 100%;
+   height: 130px;
    border-radius: 1rem 1rem 0 0;
+   border: 5px solid white;
+   object-fit: cover;
+
  }
 
  .bloc_room, .bloc_room2{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 55px);
+grid-column-gap: 27px;
+grid-row-gap: 0px;
  }
+
+.description{
+   background-color: white;
+   padding: 12px;
+    border-radius: 0 0 1rem 1rem;
+    margin-top: -3px;
+}
+
+.description h3{
+   margin-top: 0;
+}
+
+#more{
+   font-weight: bold;
+}
+
+
+aside{
+   margin-left: 980px;
+   background-color: #F2F2F2;
+   border-radius: 1rem;
+   width: 30%;
+   margin-top: 25px;
+   padding: 20px;
+   height: 640px;
+
+}
+
+aside img{
+    height: 132px;
+    width: 140px;
+    border-radius: 1rem 0 0 1rem;
+    object-fit: cover;
+    float: left;
+    margin-right: 12px;
+   
+   border: 5px solid white;
+}
+
+aside h3{
+   margin: auto;
+   padding-top: 12px;
+}
+
+aside .stars:not(.stars_marge){
+   padding-top: 45px;
+}
+
+.stars_marge{
+   padding-top: 30px;
+}
+
+#increase{
+   margin-top: 17px;
+   font-size: 1.2rem;
+}
+
+#bloc_populaire{
+   margin-top: 25px;
+}
+
+#activity_content{
+   margin-top: 25px;
+}
+
+#top_content{
+   display: flex;
+   justify-content: space-between;
+}
+
+.conteneur_2, .conteneur_3{
+   padding-top: 70px;
+}
+
+.descr_size{
+   background-color: white;
+   padding: 5px;
+   margin-left: 25px;
+   border-radius: 0 1rem 1rem 0;
+   height: 132px;
+   width: 50%;
+   margin-left: 37%;
+
+}
+
+#bloc_activity{
+   margin-top: 70px;
+}
+
+.content_ac1{
+   display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 20px;
+grid-row-gap: 0px;
+float: left;
+width: 55%;
+height: 600px;
+}
+
+.content_ac2{
+   display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 20px;
+grid-row-gap: 0px;
+height: 600px;
+}
+
+.img_1 {
+width: 350px;
+height: 549px;
+object-fit: cover;
+}
+
+.img_4{
+   width: 350px;
+height: 549px;
+object-fit: cover;
+}
+
+.img_2, .img_3, .img_5, .img_6{
+   width: 280px;
+height: 184px;
+    margin: 0;
+    margin-left: 25px;
+    object-fit: cover;
+}
+
+.footercontent{
+   display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+background-color: #F2F2F2;
+height: 125px;
+margin-top: 70px;
+padding-left: 70px;
+}
