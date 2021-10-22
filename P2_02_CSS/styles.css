@@ -170,7 +170,7 @@ form {
   padding: 20px;
   float: left;
   margin-top: 25px;
-  margin-left: 15px;
+  margin-left: 30px;
 }
 
 .room:hover {
@@ -222,7 +222,7 @@ aside {
 }
 
 #hotel, aside{
-   margin-bottom: 6%;
+   margin-bottom: 3%;
 }
 
 aside img {
@@ -291,11 +291,15 @@ aside .stars:not(.stars_marge) {
   height: 132px;
   width: 65%;
   margin-left: 30%;
-  box-shadow: 3px 3px 10px lightgrey;
+  box-shadow: 3px 3px 6px lightgrey;
 }
 
-#anchor_activity {
-  margin-left: 40px;
+#bloc_activity, h1{
+   margin-top: 0;
+}
+
+#bloc_activity h1{
+   margin-left: 40px;
 }
 
 #bloc_activity img {
@@ -304,6 +308,7 @@ aside .stars:not(.stars_marge) {
 
 #bloc_activity p {
   font-weight: bold;
+  max-width: 100%;
 }
 
 .content_ac1 {
@@ -313,8 +318,7 @@ aside .stars:not(.stars_marge) {
   grid-column-gap: 15px;
   grid-row-gap: 0px;
   float: left;
-  width: 49%;
-  height: 25px;
+  height: 600px;
   margin-left: 30px;
 }
 
@@ -325,7 +329,7 @@ aside .stars:not(.stars_marge) {
   grid-column-gap: 15px;
   grid-row-gap: 0px;
   height: 600px;
-  margin-left: 5px;
+  margin-left: 30px;
 }
 
 .img_1,
@@ -346,13 +350,17 @@ aside .stars:not(.stars_marge) {
   object-fit: cover;
 }
 
+.img_2 + p, .img_3 + p{
+  width: 75%;
+}
+
 .img_1 + p,
 .img_4 + p {
   font-size: 14px;
   background-color: white;
   border-radius: 0 0 1rem 1rem;
   padding: 1.25rem 0 1.25rem 5%;
-  margin: auto;
+  max-width: 100%;
   margin-top: -3px;
   box-shadow: -1px 1px 4px 4px #0000002e;
 }
@@ -366,13 +374,9 @@ aside .stars:not(.stars_marge) {
   background-color: white;
   border-radius: 0 0 1rem 1rem;
   padding: 1.25rem 0 1.25rem 5%;
+  max-width: 100%;
   margin-top: -3px;
   box-shadow: -1px 1px 4px 4px #0000002e;
-}
-
-.img_2 + p,
-.img_3 + p{
-   width: 77%;
 }
 
 .footercontent {
@@ -408,7 +412,7 @@ aside .stars:not(.stars_marge) {
 @media only screen and (min-width: 960px) {
   aside {
     width: 28%;
-    height: 634px;
+    height: 628px;
   }
 
   #hotel {
@@ -477,7 +481,8 @@ aside .stars:not(.stars_marge) {
   }
 
   input{
-     width: 100%;
+     height: 25px;
+     width: 75%;
   }
 
   .search-loupe {
@@ -495,13 +500,26 @@ aside .stars:not(.stars_marge) {
     display: none;
   }
 
-  #filter{
-     margin-top: 0;
-     width: 100%;
+  #filter, h3{
+   margin-left: 14%;
+   margin-bottom: auto;
   }
 
   #filter_content{
-     flex-direction: column;
-    
+   display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(4, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px; 
+   margin-top: 3rem;
   }
+
+  .eco { grid-area: 1 / 1 / 2 / 2; }
+  .fam { grid-area: 1 / 2 / 2 / 3; } 
+  .love { grid-area: 2 / 1 / 3 / 2; }
+.pets { grid-area: 3 / 1 / 4 / 2;
+width: 100%;
+font-size: 13px;}
+
+
 }
