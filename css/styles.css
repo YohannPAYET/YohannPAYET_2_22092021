@@ -576,27 +576,31 @@ h1 {
     font-size: 13px;
   }
 
-  .img_1,
-  .img_4 {
-    width: 417px;
-    height: 150px;
-    object-fit: cover;
-  }
+.img_1,
+.img_4 {
+   
+  width: 417px;
+  height: 150px;
+  object-fit: cover;
+}
 
-  .img_2,
-  .img_3,
-  .img_5,
-  .img_6 {
-    width: 417px;
-    height: 150px;
-    margin: auto;
-    margin-left: 0;
-    object-fit: cover;
-  }
+.img_2,
+.img_3,
+.img_5,
+.img_6 {
 
-  .content_ac1,
-  .content_ac2 {
-    float: none;
-    display: inline-block;
-  }
+width: 417px;
+height: 150px;
+  margin: auto;
+  margin-left: 0;
+  object-fit: cover;
+}
+
+.content_ac1, .content_ac2{
+   float: none;
+   display: inline-block;
+}
+
+
+
 }
