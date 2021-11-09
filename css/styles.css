@@ -512,8 +512,7 @@ h1 {
 /****************************** Media Query Tablette ****************************************/
 
 @media screen and (min-width: 481px) and (max-width: 900px) {
-  body {
-  }
+
   .search-button {
     display: none;
   }
